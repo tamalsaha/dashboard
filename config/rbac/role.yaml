@@ -1,0 +1,110 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - dbgates
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - dbgates/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - dbgates/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - pgadmins
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - pgadmins/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - pgadmins/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - phpmyadmins
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - phpmyadmins/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - phpmyadmins/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - supersets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - supersets/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - dashboard.kubedb.dev
+  resources:
+  - supersets/status
+  verbs:
+  - get
+  - patch
+  - update
