@@ -1,0 +1,7 @@
+## Append samples of your project ##
+resources:
+- dashboard_v1alpha1_pgadmin.yaml
+- dashboard_v1alpha1_phpmyadmin.yaml
+- dashboard_v1alpha1_dbgate.yaml
+- dashboard_v1alpha1_superset.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples

@@ -1,0 +1,12 @@
+apiVersion: dashboard.kubedb.dev/v1alpha1
+kind: Superset
+metadata:
+  labels:
+    app.kubernetes.io/name: superset
+    app.kubernetes.io/instance: superset-sample
+    app.kubernetes.io/part-of: dashboard
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: dashboard
+  name: superset-sample
+spec:
+  # TODO(user): Add fields here
